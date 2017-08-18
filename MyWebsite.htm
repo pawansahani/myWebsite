@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+<script >
+dealt=1000;
+number=1;
+image_seq=new Array();
+for(i=1;i<5;i++)
+{
+image_seq[i]= new Image();
+image_seq[i].src=i+".jpg";
+}
+number=1;
+function animate()
+{
+delay=1000;
+document.line_rotate.src=image_seq[number].src;
+number++;
+if(number>4) number=1;
+}
+</script>
+
+</head>
+<body bgcolor="sky blue" text="white">
+<marquee style=" background-color:blue";font-style:italic" direction="right" behavior="alternate" ><b>Welcome To YummyPizza.com</b></marquee>
+<div id="menu" align="middle" background="red">
+   
+<a href="/index.htm" alink="red" link="blue" vlink="yellow" >HOME</a>|
+<a href="/about/contact_us.htm" target="_blank">CONTACT</a>|
+<a href="MM_pizza_cookbook.pdf" target="_blank" link="blue" alink="red" vlink="yellow">ABOUT</a>|
+<a href="Online_SU_2015-Oct5.pdf" target="_blank" alink="red">MENU</a>
+</div>
+<button> <a href="advdertisment.htm" link="red" alink="green">ADVERTISMENT</a></button>
+<p align="right" ><button><a href="signin.htm">Sign in</a></button>|<button><a href="login.htm" target="_blank">Log in</a></button></p>
+ 
+<p align="center">
+<img name="line_rotate" src="1.jpg" onLoad="setTimeout('animate()',1000)" onMouseover="clearTimeout(setTimeout('animate()',1000))" align="middle" style=" bgcolor:red; width:700px;height:250px; border:3px  red " /><br />
+<input type="radio" name="p" onclick="document.getElementById('line_rotate').src='1.jpg'"  />
+<input type="radio"  name="p" onclick="document.getElementById('line_rotate').src='2.jpg'"  />
+<input type="radio"  name="p" onclick="document.getElementById('line_rotate').src='3.jpg'"  />
+<input type="radio"  name="p" onclick="document.getElementById('line_rotate').src='4.jpg'"  /><br /><br /><br />
+
+
+<img src="2.jpg"  /><br />
+<button onclick="over();"><font color="blue" >FIND THE NEAREST YUMMYPIZZA STORE</font></button><br /><br /><br /><br />
+
+<img src="1.jpg" /><br />
+<button><a href="www.niysti.in">ORDER YOUR FAVIOURITE PIZZA</a></button>
+</p>
+
+
+</body>
+</html>

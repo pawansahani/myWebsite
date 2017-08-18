@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign in</title>
+<style type="text/css" media="all">
+ label{
+  color:red;
+  font-size:20px;
+  font-weight:900;
+}
+</style>
+<script type="text/javascript">
+<!--
+function validate()
+{
+ if(document.myForm.password.value!=document.myForm.password1.value)
+  {
+    alert("password must be same");
+    document.myForm.password.focus();
+    document.myForm.password1.focus();
+     return false;
+}
+//-->
+</script
+
+</head>
+<body bgcolor="sky blue" text="white" >
+<marquee bgcolor="blue">YUMMYPIZA.COM</marquee>
+<p align="right" ><button><a href="G:\html\MyWebsite.htm" target="_blank">HOME</a></button></p>
+
+<tt>
+<p align="middle"><button><a href="http://www.gmail.com" target="_blank"><img src="G:\html\download.png" border="0"></a></button>
+<br /><br /> <button><a href="http://www.facebook.com" target="_blank"><img src="G:\html\download2.jpg" /></a></button></p>
+<hr width="50%" />
+<h1 align="middle">OR</h1>
+</tt>
+
+<form align="center" name="myForm" onsubmit="return(validate());">
+<div><table align="center" cellpadding="9" border="20" bgcolor="white" cellspacing="25" background="G:\html\4791207-9790062099-Pizza.jpg" bordercolor="yellow">
+
+<tr><td><label>Name:    </label></td>
+<td><input type="text" placeholder="Enter your name" required /><br /></td>
+</tr>
+<tr><td><label>Date:</label></td>
+<td><input type="date" name="birth date" required /><br /></td>
+</tr>
+<tr>
+<td><label>Email</label></td>
+<td><input type="email" placeholder="Email" required /><br /></td>
+</tr>
+<tr><td><label>Phone</label></td>
+<td><input type="number" maxlength="10" placeholder="Phone number" required /><br /></td>
+</tr>
+<tr><td><label>choose photo</label></td>
+<td><input type="file" accept="/image/*"><br /></td>
+</tr>
+<tr><td><label> choose password:</label></td>
+<td><input type="password" maxlength="8" name="password" placeholder="password" required /><br /></td>
+</tr>
+<tr>
+<td><label>confirm password</label></td>
+<td><input type="password" maxlength="8"  name="password1" placeholder="password" required /><br /></td>
+</tr>
+</table>
+<input type="submit" value="submit" onclick="warn();" />
+<input type="reset" value="reset" />
+
+<div>
+
+</form>
+
+</body>
+</html>

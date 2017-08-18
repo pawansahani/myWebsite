@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log in</title>
+<script type="text/javascript">
+<!--
+function getConfirmation(){
+var retVal = confirm("Do you want to continue ?");
+if( retVal == true ){
+//document.write ("User wants to continue!");
+return true;
+}else{
+//Document.write ("User does not want to continue!");
+return false;
+}
+}
+//-->
+</script>
+<head>
+<body text="white" bgcolor="sky blue">
+<marquee  text="red" behaviour="scroll" bgcolor="#36C">YUMMYPIZZA.COM</marquee>
+<form method="GET|POST" align="center">
+<table align="center" cellpaddig="2" cellspacing="2" border="1">
+<tr><td><label>Username</label></td>
+<td><input type="text" placeholder="username or email id" required/></td></tr>
+<tr>
+<td><label>password</label></td>
+<td><input type="password" placeholder="password" required /></td>
+</tr>
+
+</table>
+<input type="button" onclick="getConfirmation();" value="submit" />
+</form>
+<form align="center">
+<img id="my image" src="G:\html\20bannermobile.png"  align="middle" style="width:1200px;height:700px;" /><br />
+<input type="radio" name="p" onclick="document.getElementById('my image').src='20bannermobile.png'"  />
+<input type="radio"  name="p" onclick="document.getElementById('my image').src='10per2.jpg'"  />
+</form>
+</body>
+</html>
